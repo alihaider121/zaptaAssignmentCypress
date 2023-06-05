@@ -1,7 +1,7 @@
 describe("e2e-feature listing - midland appartments", () => {
   it("Verify the text of the stay and the Amenities sections", () => {
     //visit page
-    cy.visit("https://stg.zaptatech.com/");
+    cy.visitWebsite("https://stg.zaptatech.com/");
     //scroll and click Midland Appartments
     cy.get("#featured").scrollIntoView({ easing: "linear" });
     cy.get(".swiper-slide-next > a > .feature-card > .img-fluid").click({
